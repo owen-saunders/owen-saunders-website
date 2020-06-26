@@ -125,18 +125,23 @@
       <!-- Projects-->
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Active</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="home" aria-selected="false">Link</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="home" aria-selected="false">Link</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link disabled" data-toggle="tab" href="#" role="tab" aria-controls="home" aria-selected="false">Disabled</a>
         </li>
       </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">First</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Second</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Third</div>
+      </div>
 
       <!-- Page Alert -->
       <div class="alert alert-info alert-dismissible fade show" role="alert">
