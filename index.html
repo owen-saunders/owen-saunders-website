@@ -68,68 +68,65 @@
       </div>
     </nav>
 
-    <!-- Sidebar -->
-    <ul class="sidebar">
-    </ul> <!-- Side End -->
+
+    <div class="responsive" style="height:10em;">
+      <div><img class="d-block h-100 w-100" src="assets/images/grand_challenge.png" alt="First slide"></div>          
+      <div><img class="d-block h-100 w-100" src="assets/images/spaceapps_NO2.png" alt="First slide"></div>
+      <div><img class="d-block h-100 w-100" src="assets/images/grand_challenge.png" alt="First slide"></div>
+      <div><img class="d-block h-100 w-100" src="assets/images/grand_challenge.png" alt="First slide"></div>
+      <div>More</div>
+      <div><img class="d-block h-100 w-100" src="assets/images/grand_challenge.png" alt="First slide"></div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+
+        $('.responsive').slick({
+          dots: true,
+          infinite: false,
+          autoplay:true,
+          autoplaySpeed:5000,
+          speed: 1000,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });
+      
+    </script>
+
+    <div class="seperator seperator_blue">
+      <h1> Hello </h1>
+    </div>
 
     <!--Content -->
     <div class="content container-fluid">
       <div class="row">
         <div class="col-sm">
-          <div class="container">
-            <div class="responsive">
-              <div><img class="d-block h-100" src="assets/images/grand_challenge.png" alt="First slide"></div>          
-              <div><img class="d-block h-100" src="assets/images/grand_challenge.png" alt="First slide"></div>
-              <div><h3>3</h3></div>
-              <div><h3>4</h3></div>
-              <div><h3>5</h3></div>
-              <div><h3>6</h3></div>
-            </div>
-        
-            <script>
-              $(document).ready(function(){
-        
-                $('.responsive').slick({
-                  dots: true,
-                  infinite: false,
-                  speed: 300,
-                  slidesToShow: 4,
-                  slidesToScroll: 4,
-                  responsive: [
-                    {
-                      breakpoint: 1024,
-                      settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                      }
-                    },
-                    {
-                      breakpoint: 600,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                      }
-                    },
-                    {
-                      breakpoint: 480,
-                      settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                      }
-                    }
-                  ]
-                });
-                $('.slick-slide').css('height','10em' );
-              });
-              
-            </script>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
           One of three columns
         </div>
         <div class="col-sm">
@@ -139,6 +136,9 @@
           One of three columns
         </div>
       </div>
+
+      
+
       <!-- Flexbox Grid -->
       <!-- Cards showing recent topics or reading etc -->
       <div class="d-flex flex-wrap justify-content-center">

@@ -1,3 +1,39 @@
 img {
     object-fit: cover;
 }
+
+/* Inspired By BenConstable9 (github)*/
+.seperator {
+    z-index: 1;
+    margin: -50px 0px 50px 0px;
+    padding: 10px 10px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.seperator:before, .seperator:after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.seperator_blue:before, .seperator_blue {
+    background: #1abddd;
+}
+.seperator_blue:after {
+    background: #ff4b3e;
+}
+.seperator:before {
+    top: -10;
+    transform: skewY(5deg);
+    transform-origin: 50%;
+}
+.seperator:after {
+    bottom: -0;
+    transform: skewY(-5deg);
+    transform-origin: 50%;
+}
